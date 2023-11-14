@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.skip-content {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-content:focus {
+    left: 10px;
+    top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    z-index: 9999;
+}
